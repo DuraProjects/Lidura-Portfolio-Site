@@ -1,0 +1,473 @@
+* {
+    margin:0;
+    padding:0; 
+    
+} 
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 7%, rgba(87,9,121,1) 48%, rgba(0,212,255,1) 100%);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 26px;
+    overflow-x: hidden;
+   
+}
+
+/* Main Nav */ 
+
+
+
+
+nav ul {
+     margin-right: 2em;
+     float: right; 
+    
+   
+}
+
+
+nav a {
+    margin-left: 1em;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(0,212,255,1);
+   
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+   
+   
+} 
+
+.hamburger {
+    display: none;
+    cursor:pointer;
+   
+}
+
+.bar{
+    display: block;
+    width:25px;
+    height: 3px;
+    margin: 5px auto;
+   -webkit-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   background-color: rgba(0,212,255,1);
+   
+} 
+
+
+
+nav a:hover {
+    color:  rgb(226, 239, 250);
+    text-decoration: underline;
+} 
+
+
+
+
+/* Introduction */ 
+
+
+
+#intro-text {
+    margin-left: 4em;
+    position: relative;
+    top: 13em; 
+    animation-name: appear;
+    animation-duration: 3s;
+
+} 
+
+@keyframes appear {
+    0%{ opacity: 0; transform: scale3d(0.3, 0.3, 0.3); }
+    60%{ opacity: 1; transform: scale3d(1,1,1); }
+    }
+
+#intro-text p {
+    color:  rgb(226, 239, 250);
+}
+
+section article {
+    display: flex;
+}
+
+#lidura {
+    max-width: 300%;
+    height: auto; 
+    margin-top: 2em;
+    margin-left: 6em;
+    border-radius: 50%;
+    position: relative;
+    top: 6em; 
+    box-shadow: 0px 0px 24px 3px rgba(174, 53, 185, 0.68); 
+    animation-name: bounce-in;
+    animation-duration: 3s; 
+    
+   
+} 
+
+@keyframes bounce-in {
+    0%{ opacity: 0; transform: scale(.3); }
+    50%{ opacity: 1; transform: scale(1.0); }
+    70%{ transform: scale(0.9); }
+    100%{ transform: scale(1); }
+    }
+
+h1:first-child {
+    color: rgba(0,212,255,1);
+}
+
+.introduction button {
+    position: relative; 
+    top: 40em; 
+    right: 30em; 
+    padding: 20px 30px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgb(78, 100, 224);
+    border: none;
+    border-radius: 25px; 
+    cursor: pointer; 
+    box-shadow: 0px 0px 13px 3px rgba(59, 92, 141, 0.68);
+
+} 
+
+.introduction button:hover {
+    background-color:  rgb(226, 239, 250);
+}
+
+/* Education and Skills */
+
+#education-and-skills {
+    margin-top: 10em;
+    margin-left: 4em;
+    position: relative;
+    top: 4em;
+    display: flex; 
+    color: rgba(0,212,255,1);
+}  
+
+
+#education-and-skills i {
+    margin-top: 2em;
+    margin-left: 1em; 
+    color: rgb(226, 239, 250);
+    
+} 
+
+#education-and-skills h2,h3 {
+    color: rgba(0,212,255,1); 
+    margin-top: 3em;
+} 
+
+#education-and-skills a {
+    text-decoration: none;
+}
+
+#icons {
+    margin-top: 6em;
+}
+
+#education-and-skills i:hover {
+    animation-name: zoom-in-out;
+    animation-duration: 1s;
+} 
+
+@keyframes zoom-in-out {
+    0%{ -ms-transform: scale(1); transform: scale(1); }
+    50%{ -ms-transform: scale(1.2); transform: scale(1.2); }
+    100%{ -ms-transform: scale(1); transform: scale(1); }
+    }
+
+#education-and-skills a,p {
+    color: rgb(226, 239, 250);
+} 
+
+
+/* Projects */ 
+
+#projects {
+    display: flex;
+    margin-top: 15em;
+} 
+
+#projects h2 {
+    position: relative; 
+    left: 5em; 
+    color:  rgb(113, 29, 150);
+}
+
+#projects h3 {
+    margin-top: 5em;
+    position: relative;
+    left: 1em;
+    color: rgba(87,9,121,1);
+} 
+
+video {
+    position: relative;
+    right: 2em;
+    bottom: 4em; 
+    background-color: rgba(11, 62, 138, 0.68);
+    box-shadow: 	0px 0px 24px 3px rgba(22, 28, 63, 0.68);
+    padding: 30px;
+}
+
+#keep-gaming-button {
+    position: relative;
+    bottom: 11em;
+    left: 8em;
+    padding: 20px 30px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px; 
+    background-color: rgba(174, 53, 185, 0.68);
+    box-shadow: 	0px 0px 24px 3px rgba(27, 6, 49, 0.68);
+} 
+
+#mangata-button{
+    position: relative;
+    bottom: 11em;
+    left: 8em;
+    padding: 20px 30px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px; 
+    background-color: rgba(174, 53, 185, 0.68);
+    box-shadow: 	0px 0px 24px 3px rgba(27, 6, 49, 0.68);
+} 
+
+#abstract-button {
+    position: relative;
+    bottom: 11em;
+    left: 8em;
+    padding: 20px 30px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px; 
+    background-color: rgba(174, 53, 185, 0.68);
+    box-shadow: 	0px 0px 24px 3px rgba(27, 6, 49, 0.68);
+} 
+
+#keep-gaming-button:hover {
+ animation-name: shake;
+ animation-duration: 3s;
+}
+
+@keyframes shake {
+    0%{ transform: rotate(-15deg); -ms-transform: rotate(-15deg); }
+    2%{ transform: rotate(15deg); -ms-transform: rotate(15deg); }
+    4%{ transform: rotate(-18deg); -ms-transform: rotate(-18deg); }
+    6%{ transform: rotate(18deg); -ms-transform: rotate(18deg); }
+    8%{ transform: rotate(-22deg); -ms-transform: rotate(-22deg); }
+    10%{ transform: rotate(22deg); -ms-transform: rotate(22deg); }
+    12%{ transform: rotate(-18deg); -ms-transform: rotate(-18deg); }
+    14%{ transform: rotate(18deg); -ms-transform: rotate(-18deg); }
+    16%{ transform: rotate(-12deg); -ms-transform: rotate(-12deg); }
+    18%{ transform: rotate(-12deg); -ms-transform: rotate(-12deg); }
+    20%{ transform: rotate(0deg); -ms-transform: rotate(0deg); }
+    }
+
+#mangata-button:hover {
+   animation-name: elastic;
+   animation-duration: 3s;
+} 
+
+@keyframes elastic {
+    0%{ -ms-transform: scale(1); transform: scale(1); }
+    30%{ -ms-transform: scaleX(1.25) scaleY(0.75); transform: scaleX(1.25) scaleY(0.75); }
+    40%{ -ms-transform: scaleX(0.75) scaleY(1.25); transform: scaleX(0.75) scaleY(1.25); }
+    60%{ -ms-transform: scaleX(1.15) scaleY(0.85); transform: scaleX(1.15) scaleY(0.85); }
+    100%{ -ms-transform: scale(1); transform: scale(1); }
+    }
+
+#abstract-button:hover {
+    animation-name: jump;
+    animation-duration: 1s;
+}
+
+@keyframes jump{
+    0%{ transform:translateY(0); }
+    20%{ transform:translateY(0); }
+    40%{ transform:translateY(-30px); }
+    50%{ transform:translateY(0); }
+    60%{ transform:translateY(-15px); }
+    80%{ transform:translateY(0); }
+    100%{ transform:translateY(0); }
+    } 
+
+  /* Footer*/ 
+
+  #contacts { 
+    padding: 6%;
+    background-color: black;
+    color: rgba(0,212,255,1);
+    
+  } 
+
+  #contacts h2 {
+    position: relative;
+    bottom: 1.5em;
+    font-size: 50px;
+  }
+
+  #contacts i {
+    color: rgba(174, 53, 185, 0.68);
+    margin-left: 0.5em;
+   
+  } 
+
+  #contacts p {
+    float: right;
+    position: relative;
+    bottom: 2em;
+    font-size: 40px;
+    font-weight: 800;
+    
+} 
+
+  .thank-you {
+    opacity: 0;
+    transition: all 2s;
+  }
+
+  .show {
+    opacity: 1;
+  } 
+
+
+  /*mobile*/
+
+@media(max-width:900px) {
+    body {
+        padding: 0;
+        margin: 0; 
+        
+        
+    }
+
+    
+    .hamburger {
+        display:block; 
+        
+    } 
+
+    .hamburger.active .bar:nth-child(2){
+        opacity:0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+       transform: translateY(8px) rotate(45deg);
+    } 
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+     } 
+
+     .nav-menu {
+        position: fixed;
+        left: -100%;
+        top:70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+     }
+
+     nav li {
+        margin: 16px 0;
+     } 
+
+     .nav-menu.active {
+        left: 0;
+     } 
+
+     #intro-text {
+        margin-left: 2em;
+     
+    } 
+    
+   section article {
+    display: block;
+   }
+
+   #lidura {
+    max-width: 50%;
+    position: relative;
+    top: 12em; 
+    right: 2em;
+   }
+
+   #education-and-skills {
+    display: block;
+    margin-right: 2em;
+   } 
+
+   #projects {
+    display: block;
+    margin-top: 15em;
+} 
+
+video {
+    position: relative;
+   left: 1em;
+ 
+    padding: 10px;
+}
+
+#projects h2 {
+    color: rgba(174, 53, 185, 0.68);
+}
+
+#projects h3 {
+    color: rgba(0,212,255,1);
+    position: relative;
+    left: 3em;
+} 
+
+#keep-gaming-button {
+    position: relative;
+    left: 10em;
+}
+
+#mangata-button{
+    position: relative;
+    left: 10em;
+}
+
+#abstract-button {
+    position: relative;
+    left: 10em;
+}
+
+#contacts { 
+    padding: 15%;
+    background-color: black;
+    color: rgba(0,212,255,1);
+    overflow-y: hidden;
+  } 
+
+  #contacts h2 {
+    position: relative;
+    left: 0.5em;
+    bottom: 1em;
+    font-size: 50px;
+  }
+
+  #contacts p {
+   position: relative;
+    top: 3em;
+    font-size: 23px;
+} 
+
+} 
+
